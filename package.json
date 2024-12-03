@@ -6,7 +6,7 @@
     "test": "test"
   },
   "scripts": {
-    "build": "if not exist build mkdir build && xcopy /E /I /H /Y .\\* .\\build\\ > nul && echo 'Static files are in build/'",
+    "build": "if not exist build (mkdir build) && xcopy /E /I /H /Y .\\* .\\build\\ > nul && echo 'Static files are in build/'",
     "test": "jest"
   },
   "keywords": [],
